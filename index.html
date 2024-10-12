@@ -143,6 +143,18 @@
       <h3 class="widget-title">Recent Posts</h3>
       <ul>
         
+          <a class="recent-link" href="/2024/10/10/%E8%AF%AD%E6%B3%95%E5%88%86%E6%9E%90/" title="语法分析" >
+            <div class="recent-link-text">
+              语法分析
+            </div>
+          </a>
+        
+          <a class="recent-link" href="/2024/10/10/%E8%AF%8D%E6%B3%95%E5%88%86%E6%9E%90/" title="词法分析" >
+            <div class="recent-link-text">
+              词法分析
+            </div>
+          </a>
+        
           <a class="recent-link" href="/2024/09/14/yolo-machine-learning-recruit/" title="yolo_machine-learning_recruit" >
             <div class="recent-link-text">
               yolo_machine-learning_recruit
@@ -158,18 +170,6 @@
           <a class="recent-link" href="/2024/07/24/%E7%83%A4%E5%8C%A0/" title="烤匠" >
             <div class="recent-link-text">
               烤匠
-            </div>
-          </a>
-        
-          <a class="recent-link" href="/2024/07/22/%E8%AF%84%E8%AE%BA%E5%8A%9F%E8%83%BD/" title="评论功能" >
-            <div class="recent-link-text">
-              评论功能
-            </div>
-          </a>
-        
-          <a class="recent-link" href="/2024/07/21/H-Burger/" title="H Burger" >
-            <div class="recent-link-text">
-              H Burger
             </div>
           </a>
         
@@ -231,6 +231,16 @@
                 teaching support
                 <div class="category-count">1</div>
             </a>
+        </div></div>
+            <a class="category-link" href="/categories/Study/">
+                Study
+                <div class="category-count">2</div>
+            </a>
+        <div class="children"><div class="category-box">
+            <a class="category-link" href="/categories/Study/Compiler-Construction-Principles/">
+                Compiler Construction Principles
+                <div class="category-count">2</div>
+            </a>
         </div></div></div>
     </div>
   </div>
@@ -241,7 +251,7 @@
   <div class="widget-wrap">
     <div class="widget">
       <h3 class="widget-title">Tags</h3>
-      <ul class="widget-tag-list" itemprop="keywords"><li class="widget-tag-list-item"><a class="widget-tag-list-link" href="/tags/daily/" rel="tag">daily</a></li><li class="widget-tag-list-item"><a class="widget-tag-list-link" href="/tags/food/" rel="tag">food</a></li><li class="widget-tag-list-item"><a class="widget-tag-list-link" href="/tags/notice/" rel="tag">notice</a></li><li class="widget-tag-list-item"><a class="widget-tag-list-link" href="/tags/other/" rel="tag">other</a></li><li class="widget-tag-list-item"><a class="widget-tag-list-link" href="/tags/thoughts/" rel="tag">thoughts</a></li><li class="widget-tag-list-item"><a class="widget-tag-list-link" href="/tags/travel/" rel="tag">travel</a></li></ul>
+      <ul class="widget-tag-list" itemprop="keywords"><li class="widget-tag-list-item"><a class="widget-tag-list-link" href="/tags/daily/" rel="tag">daily</a></li><li class="widget-tag-list-item"><a class="widget-tag-list-link" href="/tags/food/" rel="tag">food</a></li><li class="widget-tag-list-item"><a class="widget-tag-list-link" href="/tags/note/" rel="tag">note</a></li><li class="widget-tag-list-item"><a class="widget-tag-list-link" href="/tags/notice/" rel="tag">notice</a></li><li class="widget-tag-list-item"><a class="widget-tag-list-link" href="/tags/other/" rel="tag">other</a></li><li class="widget-tag-list-item"><a class="widget-tag-list-link" href="/tags/thoughts/" rel="tag">thoughts</a></li><li class="widget-tag-list-item"><a class="widget-tag-list-link" href="/tags/travel/" rel="tag">travel</a></li></ul>
     </div>
   </div>
 
@@ -252,6 +262,11 @@
     <div class="widget">
       <h3 class="widget-title">Archives</h3>
       
+      
+        <a class="archive-link" href="/archives/2024/10 ">
+          October 2024 
+          <div class="archive-count">2 </div>
+        </a>
       
         <a class="archive-link" href="/archives/2024/09 ">
           September 2024 
@@ -278,6 +293,304 @@
     </div>
     <div id="content-body">
       
+   
+
+
+<article id="post-语法分析" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+   
+  <div class="article-inner">
+    <div class="article-main">
+      <header class="article-header">
+        
+<div class="main-title-bar">
+  <div class="main-title-dot"></div>
+  
+    
+      <h1 itemprop="name">
+        <a class="p-name article-title" href="/2024/10/10/%E8%AF%AD%E6%B3%95%E5%88%86%E6%9E%90/">语法分析</a>
+      </h1>
+    
+  
+</div>
+
+        <div class='meta-info-bar'>
+          <div class="meta-info">
+  <time class="dt-published" datetime="2024-10-10T09:31:00.000Z" itemprop="datePublished">2024-10-10</time>
+</div>
+          <div class="need-seperator meta-info">
+            <div class="meta-cate-flex">
+  
+  <a class="meta-cate-link" href="/categories/Study/">Study</a>><a class="meta-cate-link" href="/categories/Study/Compiler-Construction-Principles/">Compiler Construction Principles</a>
+   
+</div>
+  
+          </div>
+          <div class="wordcount need-seperator meta-info">
+            6.8k words 
+          </div>
+        </div>
+        
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/note/" rel="tag">note</a></li></ul>
+
+      </header>
+      <div class="e-content article-entry" itemprop="articleBody">
+        
+          <div class="truncate-text">
+            
+              
+语法分析简介
+上下文无关文法（Context-Free Grammar，CFG）
+定义
+文法产生式的推导
+最左推导
+与推导相关的概念
+规约
+活前缀（可行前缀）
+定义
+活前缀与句柄的关系
+
+
+语法分析树
+文法的二义性
+定义：
+消除方法
+
+
+左递归文法
+定义
+如何消除
+直接左递归
+间接左递归
+
+
+
+
+提取公式左因子
+定义
+方法
+
+
+
+
+自上而下的语法分析
+定义
+局限性
+递归下降分析
+LL(1)
+定义
+First 集
+定义
+计算方式
+
+
+FOLLOW集
+定义
+计算方式
+
+
+预测分析表
+构建方法
+
+
+分析过程
+LL(1)文法特点
+判断文法是LL(1)文法的条件
+总结
+
+
+
+
+自下而上分析法
+定义
+递进-规约
+LR语法分析技术
+定义
+结构
+LR(0)文法
+项与LR(0)自动机
+项目的分类
+构建LR(0)文法项集的方法
+
+
+GOTO函数与LR(0)自动机
+构建项集规范族
+构建LR(0)分析表的算法
+LR(0)语法分析过程的一般步骤：
+LR(0)中的项目冲突
+解决办法
+
+
+
+
+
+
+SLR(1) 语法分析方法
+定义
+SLR(1) 分析表构造算法
+判断文法是否是SLR(1)文法
+SLR(1)分析...
+            
+          </div>
+        
+      </div>
+
+         
+    </div>
+    
+     
+    <a class="right-panel  with-pic  "
+       style="background-image: url(/image/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86/Pasted%20image%2020240930154940.png)" 
+      href="/2024/10/10/%E8%AF%AD%E6%B3%95%E5%88%86%E6%9E%90/" 
+    >
+       
+      <div class="overlay">
+        <i class="fa-solid fa-angle-right with-pic"></i>
+      </div>
+       
+    </a>
+     
+  </div>
+  
+</article>
+
+
+
+
+
+
+   
+
+
+<article id="post-词法分析" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+   
+  <div class="article-inner">
+    <div class="article-main">
+      <header class="article-header">
+        
+<div class="main-title-bar">
+  <div class="main-title-dot"></div>
+  
+    
+      <h1 itemprop="name">
+        <a class="p-name article-title" href="/2024/10/10/%E8%AF%8D%E6%B3%95%E5%88%86%E6%9E%90/">词法分析</a>
+      </h1>
+    
+  
+</div>
+
+        <div class='meta-info-bar'>
+          <div class="meta-info">
+  <time class="dt-published" datetime="2024-10-10T09:30:00.000Z" itemprop="datePublished">2024-10-10</time>
+</div>
+          <div class="need-seperator meta-info">
+            <div class="meta-cate-flex">
+  
+  <a class="meta-cate-link" href="/categories/Study/">Study</a>><a class="meta-cate-link" href="/categories/Study/Compiler-Construction-Principles/">Compiler Construction Principles</a>
+   
+</div>
+  
+          </div>
+          <div class="wordcount need-seperator meta-info">
+            1.4k words 
+          </div>
+        </div>
+        
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/note/" rel="tag">note</a></li></ul>
+
+      </header>
+      <div class="e-content article-entry" itemprop="articleBody">
+        
+          <div class="truncate-text">
+            
+              
+总体介绍
+正则表达式
+什么是正则表达式
+正则表达式的数学定义
+
+
+有限状态自动机(FA)
+什么是有限状态自动机
+状态转换图
+不确定的有限自动机(NFA)
+数学定义
+NFA的转换表
+例子
+
+
+确定的有限自动机(DFA)
+数学定义
+
+
+NFA到DFA的等价变换
+子集法
+定义
+构造NFA状态K的子集的算法
+
+
+
+
+DFA 最小化
+定义
+Hopcroft 算法
+定义
+详细描述
+
+
+
+
+
+
+正则表达式与有限状态自动机
+关系
+正则表达式到NFA转换
+Thompson 构造算法
+定义
+
+
+
+
+
+
+词法分析器的实现方法
+手写词法分析器
+词法分析器生成工具
+构建词法分析器的一般步骤
+
+
+
+
+总体介绍词法分析（Lexical Analysis）词法分析器的主要任务是识别源代码中的各种词法 单元，词法单元是源程序代码中的最小语法单位，如关键字、标识符、常量、运 算符等，并将它们转换为标记(token)
+正则表达式什么是正则表达式正则表达式由普通字符（如字母、数字）和特殊字符（如元字符）组成，可以用来进行字符串匹配、查找、替换等操作。在编译器中， 正则表达式通常用于词法分析阶段，用于定义词法单元（to...
+            
+          </div>
+        
+      </div>
+
+         
+    </div>
+    
+     
+    <a class="right-panel  with-pic  "
+       style="background-image: url(/image/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86/Pasted%20image%2020240930114624.png)" 
+      href="/2024/10/10/%E8%AF%8D%E6%B3%95%E5%88%86%E6%9E%90/" 
+    >
+       
+      <div class="overlay">
+        <i class="fa-solid fa-angle-right with-pic"></i>
+      </div>
+       
+    </a>
+     
+  </div>
+  
+</article>
+
+
+
+
+
+
    
 
 
